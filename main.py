@@ -1,6 +1,7 @@
 from typing import List
 from flask import Flask, request, jsonify
 from app.chat_bot import generate_idea_suggestions, expand_idea_details
+from app.utils import rank_ideas
 
 app = Flask(__name__)
 
@@ -15,7 +16,10 @@ def generate_ideas():
 
     query = data["query"]
     ideas = generate_idea_suggestions(query)
-    return jsonify({"ideas": ideas})
+    ranked_ideas = rank_ideas(query, ideas)
+
+    return jsonify({"ideas": ranked_ideas})
+    # return jsonify({"ideas": ideas})
 
 @app.route("/expand_ideas/", methods=["POST"])
 def expand_ideas():
