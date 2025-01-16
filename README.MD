@@ -6,7 +6,7 @@ This project is a chatbot that helps users brainstorm ideas based on their input
 ## Features
 1. **Generate Ideas**: Using AI to generate three unique ideas based on a user-provided query.
 2. **Rank Ideas**: Automatically rank the ideas based on relevance, potential impact, and feasibility.
-3. **User Selection**: Allow users to select one or two ideas from the ranked list for further details.
+3. **User Selection**: Allow users to select two ideas from the ranked list for further details.
 4. **Detailed Suggestions**: Provide expanded details for the selected ideas.
 
 ## Technology Stack
@@ -25,7 +25,7 @@ This project is a chatbot that helps users brainstorm ideas based on their input
 ### Installation Steps
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/vinay-a1coder/Chatbot-for-Idea-Suggestions
    cd chatbot_for_idea_suggestion
    ```
 
